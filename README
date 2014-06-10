@@ -1,0 +1,49 @@
+Freescale's Genivi 4.0 Complaint Yocto BSP
+===========================================
+
+Supported boards
+----------------
+
+iMX6Q-SabreAuto
+
+Quick Start Guide
+-----------------
+
+Once you have downloaded the source of all projects, you will have to
+call:
+
+$: . ./setup-environment <build directory>
+
+After this step, you will be with everything need for build an image.
+
+Contributing
+------------
+
+To contribute to the development of this BSP and/or submit patches for
+new boards please send the patches against the respective project as
+informated bellow:
+
+The following layers are included on this release:
+
+ * poky: base build system and metadata
+   Path: sources/poky
+   GIT: git://git.yoctoproject.org/poky
+   Mailing list: https://lists.yoctoproject.org/listinfo/yocto
+
+ * meta-fsl-arm: support for Freescale's processors and board
+   Path: sources/meta-fsl-arm
+   Project: https://github.com/Freescale/meta-fsl-arm
+   GIT: git://github.com/Freescale/meta-fsl-arm.git
+   Mailing list: https://lists.yoctoproject.org/listinfo/meta-freescale
+
+ * meta-fsl-ivi: support for Genivi for Freescale iMX6Q-SabreAuto
+   Path: sources/meta-fsl-ivi
+   Project: https://github.com/Freescale/meta-fsl-ivi
+   GIT: git://github.com/Freescale/meta-fsl-ivi.git
+   Mailing list: https://lists.yoctoproject.org/listinfo/meta-freescale
+   Note: Use [meta-fsl-ivi] in subject to easy the processing
+
+ * meta-ivi: Yocto layer for In-Vehicle Infotainment
+   Path: sources/meta-ivi
+   GIT: git://git.yoctoproject.org/meta-ivi.git
+   Mailing list: https://lists.genivi.org/mailman/listinfo/genivi-meta-ivi
