@@ -101,7 +101,7 @@ if [ -z "$SDKMACHINE" ]; then
 fi
 
 if [ -z "$DISTRO" ]; then
-    DISTRO='fsl-ivi-vfb'
+    DISTRO='poky-ivi-systemd'
 fi
 
 OEROOT=sources/poky
