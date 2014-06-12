@@ -29,7 +29,7 @@ usage()
     echo -e "\nUsage: source $PROGNAME <build-dir>
     <build-dir>: specifies the build directory location (required)
 
-If undefined, this script will set \$MACHINE to 'imx6qsabresd'.
+If undefined, this script will set \$MACHINE to 'imx6qsabreauto'.
 
 Supported machines: `echo; ls sources/*/conf/machine/*.conf \
 | sed s/\.conf//g | sed -r 's/^.+\///' | xargs -I% echo -e "\t%"`
@@ -152,6 +152,8 @@ DL_DIR ?= "\${BSPDIR}/downloads/"
 
 INCOMPATIBLE_LICENSE = "GPLv3"
 
+BBMASK = "meta-systemd/meta-efl|meta-systemd/meta-gnome|meta-systemd/meta-multimedia|meta-openembedded/meta-gnome/recipes-gnome|meta-systemd/meta-oe/recipes-support|meta-systemd/meta-networking"
+
 EOF
     # Change settings according environment
     sed -e "s,MACHINE ??=.*,MACHINE ??= '$MACHINE',g" \
@@ -213,7 +215,7 @@ fi
 
 cat <<EOF
 
-Welcome to Freescale Genivi 4.0 BSP
+Welcome to Freescale Genivi 3.0 BSP
 
 The Yocto Project has extensive documentation about OE including a
 reference manual which can be found at:
@@ -229,7 +231,7 @@ Common targets are:
     meta-ide-support
 
 Genivi BSP targets:
-	foton-image
+	excalibur-image
 
 EOF
 
