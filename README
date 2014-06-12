@@ -1,4 +1,4 @@
-Freescale's Genivi 4.0 Complaint Yocto BSP
+Freescale's Genivi 3.0 Complaint Yocto BSP
 ===========================================
 
 Supported boards
@@ -29,6 +29,11 @@ The following layers are included on this release:
    Path: sources/poky
    GIT: git://git.yoctoproject.org/poky
    Mailing list: https://lists.yoctoproject.org/listinfo/yocto
+
+ * meta-openembedded: additional shared OE metadata
+   Path: sources/meta-openembedded
+   GIT: git://git.openembedded.org/meta-openembedded.git
+   Mailing list: http://www.openembedded.org/wiki/Mailing_lists
 
  * meta-fsl-arm: support for Freescale's processors and board
    Path: sources/meta-fsl-arm
