@@ -213,7 +213,7 @@ fi
 
 cat <<EOF
 
-Welcome to Freescale Genivi 4.0 BSP
+Welcome to Freescale Genivi 5.0.2 BSP
 
 The Yocto Project has extensive documentation about OE including a
 reference manual which can be found at:
