@@ -29,7 +29,7 @@ usage()
     echo -e "\nUsage: source $PROGNAME <build-dir>
     <build-dir>: specifies the build directory location (required)
 
-If undefined, this script will set \$MACHINE to 'imx6qsabresd'.
+If undefined, this script will set \$MACHINE to 'imx6qsabreauto'.
 
 Supported machines: `echo; ls sources/*/conf/machine/*.conf \
 | sed s/\.conf//g | sed -r 's/^.+\///' | xargs -I% echo -e "\t%"`
@@ -101,7 +101,7 @@ if [ -z "$SDKMACHINE" ]; then
 fi
 
 if [ -z "$DISTRO" ]; then
-    DISTRO='fsl-ivi-vfb'
+    DISTRO='poky-ivi-systemd'
 fi
 
 OEROOT=sources/poky
@@ -213,7 +213,7 @@ fi
 
 cat <<EOF
 
-Welcome to Freescale Genivi 4.0 BSP
+Welcome to Freescale Genivi BSP
 
 The Yocto Project has extensive documentation about OE including a
 reference manual which can be found at:
@@ -229,7 +229,7 @@ Common targets are:
     meta-ide-support
 
 Genivi BSP targets:
-	foton-image
+	ivi-image
 
 EOF
 
