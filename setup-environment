@@ -229,7 +229,7 @@ Common targets are:
     meta-ide-support
 
 Genivi BSP targets:
-	ivi-image
+    horizon-image
 
 EOF
 
