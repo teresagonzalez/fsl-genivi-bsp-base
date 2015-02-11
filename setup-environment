@@ -150,7 +150,10 @@ PARALLEL_MAKE = '-j $NCPU'
 
 DL_DIR ?= "\${BSPDIR}/downloads/"
 
-INCOMPATIBLE_LICENSE = "GPLv3"
+#INCOMPATIBLE_LICENSE = "GPLv3"
+# Exclude depends on libreadline.so.5 leadsoname resolution failure
+# temporary hack
+PACKAGE_EXCLUDE = "python-readline"
 
 EOF
     # Change settings according environment
