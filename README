@@ -36,6 +36,13 @@ The following layers are included on this release:
    GIT: git://github.com/Freescale/meta-fsl-arm.git
    Mailing list: https://lists.yoctoproject.org/listinfo/meta-freescale
 
+ * meta-fsl-demos: demo images and recipes
+   Path: sources/meta-fsl-demos
+   Project: https://github.com/Freescale/meta-fsl-demos
+   GIT: git://github.com/Freescale/meta-fsl-demos.git
+   Mailing list: https://lists.yoctoproject.org/listinfo/meta-freescale
+   Note: Use [meta-fsl-demos] in subject to easy the processing
+
  * meta-fsl-ivi: support for Genivi for Freescale iMX6Q-SabreAuto
    Path: sources/meta-fsl-ivi
    Project: https://github.com/Freescale/meta-fsl-ivi
